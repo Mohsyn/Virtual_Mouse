@@ -76,6 +76,9 @@ class handDetector():
 
         return fingers
 
+    def allFingersUp(self):
+        return self.fingersUp() == [1, 1, 1, 1, 1]
+
     def findDistance(self, p1, p2, img, draw=True,r=15, t=3):   # Finds distance between two fingers
         x1, y1 = self.lmList[p1][1:]
         x2, y2 = self.lmList[p2][1:]
